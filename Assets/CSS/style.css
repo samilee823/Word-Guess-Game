@@ -1,5 +1,8 @@
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
 h1 {
     font-family: 'Dancing Script', cursive;
+}
+
+#container {
+    background-color: aqua;
 }
