@@ -11,32 +11,51 @@
 </head>
 
 <body>
-    <div id="container">
-    <h1>Disney Hangman</h1>
-    <!-- text Press any key to get started! -->
-    <h2 id="rules">Press any key to get started!</h2>
-    <h2 id="wins">Wins</h2>
-    <h2 id="word">Current Word  </h2>
-    <h2 id="guesses">Number of Guesses Remaining</h2>
-    <h2 id="letters">Letters Already Guessed</h2>
+  <div id="container">
+    <h1 class="text-center">Disney Hangman</h1>
+    <p class="font-weight-bold text-center" id="rules">Press any key to get started!</p>
+    <div id="wins">Wins: <span> 0 </span> </div>
+    <div id="losses">Losses: <span> 0 </span> </div>
+    <div id= "left">Guesses Left: <span> 0 </span> </div>
+    <div id="word">Word to Guess <span>:</span> </div>
+    <div id="guessed">Guessed Letters<span>: </span> </div>
 
-</div>
+  </div>
 
     <!-- image -->
     <!-- text Number of Guesses Remaining  -->
 
-<!-- // 1. Declare answers variable
-// 2. Display current word with spaces for letters
-// 3. Capture the letter the user typed
-// 4. If the letter is correct, display in current word 
-//    * Else letter is incorrect, display in "letters already guessed"
-// 5. Count down number of guesses remaining 
-// 6. Count down numer of losses until max guesses 
-// 7. Display answer and picture when guesses are done 
-// 8. New word displayed and clear out letters 
-// 9. Display win
-// 9. End -->
+<!-- 1. adding instruction to the page
+2. create a wins to keep track of users winds
+3. create correctGuesses to keep track of how many letters the user got right so far
+4. create losses variable to keep track of losses
+5. create guessesLeft store 5 
+6. create userGuesses array to keep track of letters a user has chosen
+7. create a list of word option
+8. randomly select a word to guess and store it in guessWord var
+9. find out the length of guessWord
+10. append to the page '_' for each letter in guessedWord
+11. listen for user pressing a key 
+12. capture users choice store in userChoice var 
+13. loop through each letter in the guessedWord then
+14. compare userChoice to each letter in the guessWord then
+15. if userChoice is the same as a letter in the guessWord then
+16.  replace the '_' with the userChoice
+17.  correctGuesses + 1
+18.    if correctGuesses equal to the guessWord.length then
+19.      you won
+20.      add 1 to your wins
+21.       restart the dame
+22.    end
+23. else if is not a letter in the guessed words 
+24.   add userChoice to userGuesses array
+25.   if userGuesses is equal to guessesLeft then
+26.      game over add one to losses
+27.      restart game
+28.   end
+29. end
+30. back to step 11-->
 
-    <script src="Assets/Javascript/game.js"></script>
+<script src="Assets/Javascript/game.js"></script>
 </body>
 </html>
